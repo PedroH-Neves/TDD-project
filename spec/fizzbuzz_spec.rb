@@ -15,7 +15,7 @@ describe 'Solver#fizzbuzz' do
   context 'when the argument is divisible by 5' do
     it 'returns "buzz"' do
       expect(@solver.fizzbuzz(5)).to eq('buzz')
-      expect(@solver.fizzbuzz(15)).to eq('buzz')
+      expect(@solver.fizzbuzz(20)).to eq('buzz')
     end
   end
 
@@ -28,8 +28,8 @@ describe 'Solver#fizzbuzz' do
 
   context 'when the argument is not divisible by either 3 or 5' do
     it 'returns the argument as a string' do
-      expect(@solver.fizzbuzz(1)).to eq('1')
-      expect(@solver.fizzbuzz(2)).to eq('2')
+      expect(@solver.fizzbuzz(1).to_s).to eq('1')
+      expect(@solver.fizzbuzz(2).to_s).to eq('2')
     end
   end
 

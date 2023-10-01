@@ -5,5 +5,19 @@ class Solver
     return 1 if number.zero?
 
     number * factorial(number - 1)
-  end  
+  end
+  
+  def fizzbuzz(mynum)
+    raise ArgumentError, 'must be an integer' unless mynum.is_a?(Integer)
+
+    if (mynum % 3).zero? && (mynum % 5).zero?
+      'fizzbuzz'
+    elsif (mynum % 3).zero?
+      'fizz'
+    elsif (mynum % 5).zero?
+      'buzz'
+    else
+      mynum
+    end
+  end
 end
