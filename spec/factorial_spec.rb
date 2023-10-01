@@ -1,5 +1,5 @@
 require 'rspec'
-require 'solver'
+require_relative '../solver'
 
 describe 'Solver#factorial' do
   before :each do
