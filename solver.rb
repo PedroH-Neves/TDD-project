@@ -6,7 +6,7 @@ class Solver
 
     number * factorial(number - 1)
   end
-  
+
   def fizzbuzz(mynum)
     raise ArgumentError, 'must be an integer' unless mynum.is_a?(Integer)
 
