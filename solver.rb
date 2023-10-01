@@ -20,4 +20,12 @@ class Solver
       mynum
     end
   end
+
+  def reverse(word)
+    raise ArgumentError, 'word must be a string' unless word.is_a?(String)
+
+    return word if word.length <= 1
+
+    word.reverse
+  end
 end
